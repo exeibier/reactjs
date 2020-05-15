@@ -19,7 +19,9 @@ export default class Counter extends Component {
                 
                 }))
             }
-            console.log(this.state.data % 8 === 0)
+            if (this.state.data % 8 === 0){
+                console.log(this.state.data)
+            }
             
         }, 1000);
             

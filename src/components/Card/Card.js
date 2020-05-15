@@ -11,15 +11,15 @@ function Card({
     readTime,
 }) {
     return(
-        <div>
-            <div>
+        <div className='cards'>
+            <div className='left'>
                 <p>{category}</p>
                  <h2><strong>{title}</strong></h2>
                 <p>{description}</p>
                 <p>{author}</p>
                 <p>{publicationDate}, {readTime}</p>
             </div>
-            <div>
+            <div className='right'>
                 <figure>
                     <img alt='card-image' src={'https://picsum.photos/seed/picsum/200/300'}/>
                 </figure>

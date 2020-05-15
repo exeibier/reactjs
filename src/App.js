@@ -5,6 +5,7 @@ import './App.css';
 //COmponents
 import Clock from './components/Clock'
 import Card from './components/Card/Card'
+import Counter from './components/Counter/Counter'
 
 // function App() {
 //   return (
@@ -82,15 +83,14 @@ export default class App extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Learn React
+                    <Clock/>
+                    <Counter/>
                   </a>
                 </header>
                 <div className='container-cards'>
                   {this._renderCards()}
+
                 </div>
-               
-                {/* <Clock /> */}
-               
             </div>
     )
   }
